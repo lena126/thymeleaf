@@ -7,8 +7,8 @@
 <body>
 <div th:fragment="pageshow(value1,value2)">
     <h1>Welcome page of thymeleaf.</h1>
-    <a href="/redirect">redirect+"${value1}"</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="/mainpage">mainpage+"${value1}"</a>
+    <a href="/redirect" th:text="${value1}">redirect</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/mainpage" th:text="${value2}">mainpage</a>
 </div>
 </body>
 </html>

@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Created by zhouhaishui on 2017/5/2.
+ * Created by linayang on 2019/9/3
  */
 @Controller
 public class pageController {
@@ -35,9 +35,9 @@ public class pageController {
      * @param model
      * @return
      */
-    @RequestMapping("/model")
+    @RequestMapping("/mainpage")
     public String page3(Model model){
-        model.addAttribute("name","seawater");
+        model.addAttribute("name","thymeleaf");
         return "hello";
     }
 }
